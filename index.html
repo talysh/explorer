@@ -6,133 +6,282 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bulma/css/bulma.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <title>Explorer</title>
 </head>
 
 <header class="container.is-fluid">
 
-
-    <section class="level">
+    <div id="app">
 
         <nav class="headSection level-item">
 
-            <section class="headerContainer level-item">
-
-                <div class="logoIcon">
-                    <h2>The journey not the arrival matters..</h2>
+            <div class="navbar-item">
+                <h2>The journey not the arrival matters...</h2>
+            </div>
+            <div class="navbar-brand">
+                <div class="qoutePartB">
+                    <h1>Explore</h1>
                 </div>
 
-                <div class="nav-links-container">
+                <img class="headerImg" src="images/globe.jpeg" alt="logo">
 
-                    <div class="nav-links">
-                        <a id="signUp" href="">Sign Up</a>
-                    </div>
+            </div>
 
-                    <div class="nav-links">
-                        <a id="likes" href="">Likes</a>
-                    </div>
-
-                    <div class="nav-links">
-                        <a id="contactUs" href="">Contact Us</a>
-                    </div>
-
+            <div class="navbar-burger navbar-end">
+                <div class="burgerImg level">
+                    <img src="images/square.png" alt="">
                 </div>
 
-            </section>
+            </div>
 
-            <div class="titleborder card level">
-                <div class="title card-body level-item">
-                    <h1>Explorer</h1>
+
+
+            <div class="nav-links-container navbar-menu navbar-end">
+
+
+                <div class="level">
+                    <a class="navbar-item nav-links" id="signUp" href="">
+                        Sign Up
+                    </a>
+
+                    <!-- <a class=" likes navbar-item nav-links" id="likes" href="">
+                        Likes
+                        <div class="overlay">
+                            <img class="likeIcon" src="images/like.png" alt="">
+                        </div>
+                    </a> -->
+
+                    <div class="likes" ng-repeat="a in modules">
+                        <div>
+                            <a class="navbar-item nav-links" id="likes" href="">
+                                Likes
+                            </a>
+                            <div class="overlay">
+                                <img href="" class="likeIcon" src="images/like.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+
+                    <a class="navbar-item nav-links" id="contactUs" href="">
+                        Contact Us
+                    </a>
                 </div>
             </div>
 
         </nav>
 
-    </section>
-    <div class="welcomePicture">
-
-        <section class="welcomeMessageContainer level">
-            <P>.</P>
-        </section>
-
-
-        <section class="container">
-
-            <h4 class="welcomeMessage level-item">Start your adventure today.. </h4>
-
-            <div class="activitiesContainer level-item">
-
-                <div class="activityNav-links">
-                    <a id="hotels" href="">Hotels</a>
-                </div>
-
-                <div class="activityNav-links">
-                    <a id="food" href="">Food</a>
-                </div>
-
-                <div class="activityNav-links">
-                    <a id="entertainment" href="">Entertainment</a>
-                </div>
-
-                <div class="activityNav-links">
-                    <a id="spiritualWelfare" href="">Spiritual Welfare</a>
-                </div>
-
-            </div>
-
-            <nav class="selectionContainer card level-item">
-
-                <input class="searchBar card level-item" type="text" placeholder="Search...">
-
-                <p class="countryP level-item">I want to venture to </p>
-                <form class="selectCountry" action="">
-                    <select class="card" name="states" id="countries">
-                        <option value="virginia" id="">U.S</option>
-                        <option value="washington-dc" id="">China</option>
-                        <option value="alexandria,va" id="">Canada</option>
-                    </select>
-                </form>
-
-                <p class="stateP level-item"> and explore in</p>
-                <form class="selectState" action="">
-                    <select class="card" name="states" id="states">
-                        <option value="virginia" id="">Virginia</option>
-                        <option value="washington-dc" id="">Washington, D.C</option>
-                        <option value="alexandria,va" id="">Alexandria,VA</option>
-                    </select>
-                </form>
-
-            </nav>
-
-        </section>
-
-
-        <header>
-
-            <body>
-
-                <section class="travelPreviews container.is-fluid level">
-
-                    <div class="pictureContainer">
-                        <img class="travelPictures level-item" src="images/image-placeholder.jpg" alt="">
-                        <p>Unique experiences..</p>
-                    </div>
-
-                    <div class="pictureContainer">
-                        <img class="travelPictures level-item" src="images/image-placeholder.jpg" alt="">
-                        <p>Culture experiences..</p>
-                    </div>
-
-                    <div class="pictureContainer">
-                        <img class="travelPictures level-item" src="images/image-placeholder.jpg" alt="">
-                        <p>Spiritual wellness..</p>
-                    </div>
-
-                </section>
     </div>
 
+</header>
 
-    </body>
 
+<body>
+
+    <section class="welcomebgImg">
+        <div class="welcomebgImgWrap">
+            <section class="welcomeContentContainer container.is-fluid">
+
+                <h4 class="welcomeMessage level-item">Start your adventure today.. </h4>
+
+                <nav class="selectionContainer card level">
+
+                    <input class="searchBar card level-item" type="text" placeholder="Search...">
+
+                    <form class="selectCountry level" action="submit">
+
+                        <div class="countryCard level">
+                            <p class="countryP">I want to venture to </p>
+                            <select class="card" name="states" id="countries">
+                                <option value="virginia" id="">U.S</option>
+                                <option value="washington-dc" id="">China</option>
+                                <option value="alexandria,va" id="">Canada</option>
+                            </select>
+                        </div>
+
+                        <div class="stateCard level">
+                            <p class="stateP">and explore in</p>
+                            <select class="card" name="states" id="states">
+                                <option value="virginia" id="">Virginia</option>
+                                <option value="washington-dc" id="">Washington, D.C</option>
+                                <option value="alexandria,va" id="">Alexandria,VA</option>
+                            </select>
+                        </div>
+
+                    </form>
+
+                </nav>
+
+            </section>
+        </div>
+    </section>
+
+    <section class="travelPreviewSection">
+
+        <section class="travelPreviews level">
+
+            <div class="pictureContainerWrap">
+                <div class="pictureContainer">
+                    <a href="">Unique experiences</a>
+                </div>
+                <div class="pictureContainer">
+                    <img class="travelPictures" src="images/food.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="pictureContainerWrap2">
+                <div class="pictureContainer">
+                    <a href="">Ultimate relaxation</a>
+                </div>
+                <div class="pictureContainer">
+                    <img class="travelPictures" src="images/hotel.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="pictureContainerWrap3">
+                <div class="pictureContainer">
+                    <a href="">Culture experiences</a>
+                </div>
+                <div class="pictureContainer">
+                    <img class="travelPictures" src="images/culture1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="pictureContainerWrap4">
+                <div class="pictureContainer">
+                    <a href="">Spiritual wellness</a>
+                </div>
+                <div class="pictureContainer">
+                    <img class="travelPictures" src="images/religous1.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <section class="reviewsNMapContainer">
+
+        <section class="reviewsNMapSection level">
+
+            <section class="firstReviewCol">
+
+                <div class="reviewPictureContainer level-item">
+                    <div class="reviewText1">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <img class="reviewPic" src="images/girlSmilingPic1.jpg" alt="">
+                </div>
+
+                <div class="reviewPictureContainer level-item">
+                    <img class="reviewPic" src="images/boySmilingPic3.jpg" alt="">
+                    <div class="reviewText2">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="mapSection" id="mapSection">
+
+                <div class="mapImgContainer">
+                    <img src="images/map.jpg" id="mapPlacement" alt="map placement">
+                </div>
+
+                <div class="mapNavLinks level-item">
+                    <div class="mapNav-links">
+                        <a id="food" href="">Restaurants</a>
+                    </div>
+
+                    <div class="mapNav-links">
+                        <a id="hotel" href="">Hotels & Resorts</a>
+                    </div>
+
+                    <div class="mapNav-links">
+                        <a id="entertainment" href="">Entertainment</a>
+                    </div>
+
+                    <div class="mapNav-links">
+                        <a id="spiritualWelfare" href="">Spiritual Welfare</a>
+                    </div>
+                </div>
+
+            </section>
+
+            <section class="secondReviewCol">
+
+                <div class="reviewPictureContainer level-item">
+                    <img class="reviewPic" src="images/boySmilingPic2.jpg" alt="">
+                    <div class="reviewText2">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                </div>
+
+                <div class="reviewPictureContainer level-item">
+                    <div class="reviewText1">
+                        <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+                    </div>
+                    <img class="reviewPic" src="images/girlSmilingPic2.jpg" alt="">
+                </div>
+
+            </section>
+
+        </section>
+
+    </section>
+
+    <section class="travelPreviewSection">
+
+        <section class="travelPreviews level">
+
+            <div class="pictureContainerWrap">
+                <div class="pictureContainer">
+                    <a href="">Unique experiences</a>
+                </div>
+                <div class="pictureContainer">
+                    <img class="travelPictures" src="images/food.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="pictureContainerWrap2">
+                <div class="pictureContainer">
+                    <a href="">Ultimate relaxation</a>
+                </div>
+                <div class="pictureContainer">
+                    <img class="travelPictures" src="images/hotel.jpg" alt="">
+                </div>
+            </div>
+
+
+            <div class="pictureContainerWrap3">
+                <div class="pictureContainer">
+                    <a href="">Culture experiences</a>
+                </div>
+                <div class="pictureContainer">
+                    <img class="travelPictures" src="images/culture1.jpg" alt="">
+                </div>
+            </div>
+
+            <div class="pictureContainerWrap4">
+                <div class="pictureContainer">
+                    <a href="">Spiritual wellness</a>
+                </div>
+                <div class="pictureContainer">
+                    <img class="travelPictures" src="images/religous1.jpg" alt="">
+                </div>
+            </div>
+
+        </section>
+
+    </section>
+
+
+</body>
 
 </html>

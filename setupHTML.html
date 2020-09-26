@@ -1,0 +1,98 @@
+<div id="app">
+    <section class="hero is-fullheight is-primary is-bold">
+        <!-- Hero header: will stick at the top -->
+        <div class="hero-head">
+            <nav class="navbar">
+                <div class="navbar-brand">
+                    <div class="navbar-item" href="/">
+                        <h2>The journey not the arrival matters...</h2>
+                    </>
+                    <!--
+        Using the v-on: directive to listen for the click event and toggle the data property showNav. Also, using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
+        -->
+                    <div class="navbar-burger" @click="showNav = !showNav" :class="{ 'is-active': showNav }">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+                <!--
+        Using the v-bind: directive to reactively update the class attribute 'is-active' based on the showNav property.
+        -->
+                <div class="navbar-menu" :class="{ 'is-active': showNav }">
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="/about">
+                            About
+                        </a>
+                        <a class="navbar-item" href="/path">
+                            Path
+                        </a>
+                        <a class="navbar-item" href="/blog">
+                            Blog
+                        </a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!-- Hero content: will be in the middle -->
+        <div class="hero-body">
+            <div class="container has-text-centered">
+            </div>
+        </div>
+    </section>
+</div>
+
+<header class="container.is-fluid">
+
+    <section class="headerContainer level">
+
+        <nav class="headSection level-item">
+
+            <section class="headerContainer level-item">
+
+                <section class="qouteContainer">
+
+                    <div class="qoutePartA">
+                        <h2>The journey not the arrival matters...</h2>
+                    </div>
+
+                    <div class="qoutePartB">
+                        <h1>Explore</h1>
+                    </div>
+
+                </section>
+
+                <div id="app">
+                    <div class="navbar-burger" v-on:click="showNav = !showNav" v-bind:class="{ 'is-active' : showNav }">
+
+                    <div class="headerImg">
+                        <img src="images/globe.jpeg" alt="">
+                    </div>
+
+
+                    <div class="nav-links-container">
+
+                        <div class="nav-links">
+                            <a id="signUp" href="">Sign Up</a>
+                        </div>
+
+                        <div class="nav-links">
+                            <a id="likes" href="">Likes</a>
+                        </div>
+
+                        <div class="nav-links">
+                            <a id="contactUs" href="">Contact Us</a>
+                        </div>
+
+                    </div>
+                    
+                    </div>
+                </div>
+
+            </section>
+
+        </nav>
+
+    </section>
+
+</header>
