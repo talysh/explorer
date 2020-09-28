@@ -1,20 +1,25 @@
+/* Styling for the map elements */
 #map {
-  height: 400px; /* The height is 400 pixels */
-  width: 80%; /* The width is the width of the web page */
+  height: 400px;
+  width: 80%;
   display: inline-block;
 }
 
+/* Business type icon for the main map */
 .place-icon {
   display: inline-block;
   width: 1rem;
   margin-left: 0.5rem;
 }
 
+/* Business type icon for the side list */
 .list-place-icon {
-  width: 2rem;
+  width: 2rem !important;
   margin-left: 0.5rem;
   float: right;
 }
+
+/* Pop-up info field on the map */
 .info-field {
   max-width: 9rem;
 }
@@ -27,6 +32,7 @@
   font-weight: 500;
 }
 
+/* Business information list */
 #search-list {
   box-sizing: border-box;
   padding: 0.5rem;
@@ -39,21 +45,24 @@
   overflow-y: auto;
 }
 
+/* Business information title styling */
 .info {
   font-size: 2rem;
-  color: lightblue;
+  color: #4a4a4a;
   margin: 0.2rem 0;
   padding: 0.5rem 0;
-  border-bottom: 3px solid black;
+  border-bottom: 3px solid #4a4a4a;
 }
 
+/* Individual item inside business search results */
 .searchlist-item {
-  border-top: 2px solid black;
+  border-top: 2px solid #4a4a4a;
   margin-bottom: 1rem;
   padding-top: 1rem;
 }
 
 #search-list a {
+  color: #4a4a4a !important;
   text-decoration: none;
 }
 
@@ -63,9 +72,10 @@
 }
 
 .phone-number {
-  color: lightblue;
+  color: #ff9494;
 }
 
+/* Scrolling behavior */
 ::-webkit-scrollbar {
   -webkit-appearance: none;
   width: 0.4rem;
