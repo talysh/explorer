@@ -57,9 +57,13 @@
   width: max-content !important;
 }
 
-.burgerImg {
+/* .burgerImg {
   height: 3.5rem;
   width: 3.5rem;
+} */
+
+#dropdown-item {
+  color: black;
 }
 
 #dropdown-content a
@@ -75,7 +79,7 @@
 #dropdown-content.show
 {
   display: block;
-}
+  }
 
 .nav-links-container {
   display: flex;
@@ -91,6 +95,11 @@ a:hover {
   color: rgb(63, 61, 61) !important;
   transition: 0.3s;
 }
+
+a.menu{
+  background-color:rgb(63, 61, 61);
+}
+
 
 .nav-links {
   padding: 1rem 1rem 1rem 1rem !important;
