@@ -1,19 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+
 
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Explorer Homepage</title>
+
 </head>
 
 <body>
+    <h3>My Google Maps Demo</h3>
+    <div>
+        <div id="map"></div>
+        <div id="search-list">
+            <h5 class="info">Information</h5>
+        </div>
+    </div>
 
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAM97bjZTktK2J_CFUnFfSZI1lEQKMtSHo&callback=initMap&libraries=places">
+        </script>
 
-
-    <script type="text/javascript" src="assets/script/script.js"></script>
+    <script src="assets/script/script.js"></script>
 </body>
 
 </html>

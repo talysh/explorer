@@ -1,0 +1,78 @@
+#map {
+  height: 400px; /* The height is 400 pixels */
+  width: 80%; /* The width is the width of the web page */
+  display: inline-block;
+}
+
+.place-icon {
+  display: inline-block;
+  width: 1rem;
+  margin-left: 0.5rem;
+}
+
+.list-place-icon {
+  width: 2rem;
+  margin-left: 0.5rem;
+  float: right;
+}
+.info-field {
+  max-width: 9rem;
+}
+
+.rating {
+  color: red;
+}
+
+.address {
+  font-weight: 500;
+}
+
+#search-list {
+  box-sizing: border-box;
+  padding: 0.5rem;
+  margin-left: auto;
+  border: 0.1rem solid black;
+  scroll-behavior: auto;
+  height: 400px;
+  width: 19%;
+  display: inline-block;
+  overflow-y: auto;
+}
+
+.info {
+  font-size: 2rem;
+  color: lightblue;
+  margin: 0.2rem 0;
+  padding: 0.5rem 0;
+  border-bottom: 3px solid black;
+}
+
+.searchlist-item {
+  border-top: 2px solid black;
+  margin-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+#search-list a {
+  text-decoration: none;
+}
+
+#search-list a:hover {
+  cursor: pointer;
+  color: orange;
+}
+
+.phone-number {
+  color: lightblue;
+}
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0.4rem;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 0.1rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 0.1rem lightgrey;
+}
