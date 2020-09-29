@@ -9,10 +9,10 @@ User Story:
 As a new visitor, I would like to find the weather and restaurants in a specified area, so I can find a good place to eat while planning around the weather."
 
 Wireframe:
-
+![image](https://user-images.githubusercontent.com/68360119/94494755-f07b6f00-01bd-11eb-907b-b1249a8f26dd.png)
 
 APIs: 
 1-Maps JavaScript API, 2-Google places API, 3-Open Weather API
 
 Tasks:
-1. Front end development 2. Places search (input and near me) 3. Weather search (input and near me). 
+1. Front end development landing page 2. Front end development search results page 3. Backend places search bar function (input and near me) – links from button selection, (to include weather) 4. Backend button selection functions (restaurants, hotels, etc.) 
