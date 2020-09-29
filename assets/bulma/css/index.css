@@ -1,4 +1,9 @@
 /* BACKGROUND IMGS */
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
 .welcomebgImg {
   background-image: url(/assets/images/dubai.jpg);
   background-size: auto;
@@ -55,7 +60,7 @@
 .headSection {
   background-color: white !important;
   padding: 0rem 1rem !important;
-  border-bottom: 0.2rem solid #6ade8b;
+  border-bottom: 0.1rem solid #6ade8b;
   max-height: max-content !important;
   align-items: normal !important;
 }
@@ -75,8 +80,6 @@
 .qoutePartB {
   font-size: 3rem;
   padding: 10px 0px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .headerImg {
@@ -162,8 +165,6 @@ a:hover {
 
 .contact {
   text-align: end;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 /* WELCOME CONTENT AND SEARCHBAR */
@@ -199,8 +200,6 @@ a:hover {
 }
 
 .welcomeMessage {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
   color: whitesmoke;
   font-size: 2.5rem;
   text-shadow: 3px 3px 3px black;
@@ -232,8 +231,6 @@ a:hover {
 .countryP {
   margin: 0rem 1rem !important;
   padding-bottom: 0.2rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 /* .stateCard,
@@ -242,20 +239,17 @@ a:hover {
   margin: 0 auto !important;
   padding: 0.4rem 0rem 0.4rem 0rem;
   width: max-content !important;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+   
 }
 
 .selectState {
   padding-bottom: 0.2rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+   
 }
 
 .selectCountry {
   padding-bottom: 0.2rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+   
 } */
 
 #radius {
@@ -268,8 +262,7 @@ a:hover {
   height: 2rem;
   background-color: rgb(247, 247, 247);
   border: 0.1 solid rgb(61, 60, 60);
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+
   border-radius: 0.7rem;
 }
 
@@ -283,7 +276,7 @@ a:hover {
 
 .weatherForecast {
   background-color: white;
-  border-top: 0.2rem solid #6ade8b;
+  border-top: 0.1rem solid #6ade8b;
   width: 100%;
   padding: 2rem 0 !important;
 }
@@ -301,16 +294,12 @@ a:hover {
 }
 
 .weatherData p {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
   font-size: 1rem;
   margin-right: 0.2rem;
   margin-bottom: 0.5rem;
 }
 
 .welcomeMessagePlaceHolder {
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
   font-size: 2rem;
   text-shadow: 3px 3px 3px #6ade8b;
   text-decoration: 0.1 underline solid;
@@ -318,17 +307,16 @@ a:hover {
 }
 .cityName {
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+
   font-size: 1.3rem;
-  text-shadow: 3px 3px 3px #6ade8b;
+  text-shadow: 0.1rem 0.1rem 0.1rem #6ade8b;
 }
 
 /* map section */
 
 .mapSection {
   background-color: whitesmoke !important;
-  border-top: 0.2rem solid #6ade8b;
+  border-top: 0.1rem solid #6ade8b;
 }
 
 .mapContainer {
@@ -351,8 +339,7 @@ a:hover {
 
 .mapMessage h1 {
   font-style: italic;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+
   font-size: 2rem;
   text-shadow: 0.08rem 0.08rem 0.08rem #6ade8b;
   text-decoration: 0.1 underline solid;
@@ -377,14 +364,14 @@ a:hover {
   background-color: #6ade8b;
   color: white;
   border-radius: 0.5rem;
-  border-bottom: 0.2rem solid rgb(61, 60, 60);
+  border-bottom: 0.1rem solid rgb(61, 60, 60);
   width: max-content;
   text-align: center;
   padding: 0.2rem 0.5rem;
 }
 
 .mapNav-links:hover {
-  border-bottom: 0.2rem solid #6ade8b;
+  border-bottom: 0.1rem solid #6ade8b;
   border-radius: 0.5rem;
 }
 .firstGalleryCol {
@@ -453,19 +440,19 @@ a:hover {
 
 .pictureContainer a:hover {
   transition: all 0.3s ease-in-out 0s;
-  text-shadow: 3px 3px 3px #6ade8b;
+  text-shadow: 0.1rem 0.1rem 0.1rem #6ade8b;
 }
 
 .activityNav-links:hover {
   background-color: rgb(228, 228, 228) !important;
-  border-bottom: 0.2rem solid #6ade8b;
+  border-bottom: 0.1rem solid #6ade8b;
   border-radius: 0.5rem;
 }
 
 /* reviews section */
 
 .reviewsContainer {
-  border-top: 0.2rem solid #6ade8b;
+  border-top: 0.1rem solid #6ade8b;
   background-color: white !important;
   width: 100%;
 }
@@ -517,7 +504,7 @@ a:hover {
 .reviewPic {
   height: 200px;
   width: 200px;
-  border: 0.2rem solid rgb(61, 60, 60);
+  border: 0.1rem solid rgb(61, 60, 60);
   border-radius: 0.5rem;
   margin: 0 auto;
 }
@@ -525,7 +512,7 @@ a:hover {
 .reviewText1,
 .reviewText2 {
   text-align: center;
-  border: 0.2rem 0 solid #6ade8b;
+  border: 0.1rem 0 solid #6ade8b;
   margin: 1rem 1rem 0rem;
   padding: 0.5rem;
   width: 17.5rem;
@@ -536,7 +523,7 @@ a:hover {
 /* FOOTER SECTION */
 
 .footerSection {
-  border-top: 0.2rem solid #6ade8b;
+  border-top: 0.1rem solid #6ade8b;
   background-color: whitesmoke !important;
   width: auto;
   display: flex;
@@ -544,11 +531,6 @@ a:hover {
 
 .footerInfoContainer {
 }
-
-.footerSignUpSection {
-  margin: 2rem;
-}
-
 .footerSignUpContainer {
   margin: 0.5rem;
 }
@@ -560,16 +542,12 @@ a:hover {
   margin-bottom: 1rem;
   font-size: 1rem;
   text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .footerSignUpHeader p {
   margin-bottom: 1rem;
   font-size: 0.8rem;
   text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .footerSignUpForm {
@@ -580,8 +558,6 @@ a:hover {
   height: 3rem;
   border-radius: 0.2rem;
   margin-right: 0.2rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .signUpBtn {
@@ -589,8 +565,7 @@ a:hover {
   border-radius: 0.2rem;
   height: 3rem;
   width: 5rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+
   margin: 0 auto 0 0;
   background-color: #00b7ff;
   color: white;
@@ -608,7 +583,8 @@ a:hover {
 }
 
 .footerSocialMediaSection {
-  margin-top: 1.5rem;
+  padding: 2rem;
+  background-color: #cecece;
 }
 
 #facebook,
@@ -621,7 +597,8 @@ a:hover {
   margin-right: 0.5rem;
   color: white;
   background-color: rgb(61, 60, 60);
-  border: 0.2rem solid rgb(182, 182, 182);
+  border: 0.1rem solid rgb(182, 182, 182);
+  cursor: pointer;
 }
 
 #facebook:hover,
@@ -631,7 +608,8 @@ a:hover {
   color: #6ade8b;
 }
 .footerCommitmentSpeechSection {
-  margin: 2rem 2rem 4.5rem;
+  padding: 3rem;
+  margin: 2rem 1.5rem;
 }
 
 .footerCommitmentContainer {
@@ -645,67 +623,61 @@ a:hover {
 }
 
 .commitmentSpeech h2 {
+  color: rgb(61, 60, 60);
   margin-bottom: 1rem;
   font-size: 1rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  text-align: center;
 }
 
 .commitmentSpeech p {
-  margin-bottom: 1rem;
+  width: 60%;
+  text-align: center;
+  margin: 0 auto;
   font-size: 0.8rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .brandLogo {
-  min-height: 5rem;
-  min-width: 5rem;
-  width: 5rem;
-  height: 5rem;
-  margin: 2rem 0rem 4rem 2rem;
+  height: 3rem;
+  width: 3rem;
+  margin: 0 auto;
 }
 
 .brandLogo p {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  text-align: right;
 }
 
 .p2 {
   text-align: center;
   font-size: 0.7rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+
   text-decoration: underline;
 }
 
 .footerNavigationSection {
-  margin: 2rem 2rem 4.5rem;
+  background-color: #cecece;
+  text-align: center;
 }
 
 .footerNavigationContainer {
   width: auto;
   margin: 0.5rem;
+  font-size: 0.5rem;
 }
 
 .footerNavigationContainer h2 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  margin-top: 2rem;
+  font-size: 0.5rem;
+  line-height: 0;
+  font-weight: bold;
+  text-align: center;
 }
 
 .footerInfoContainer a {
-  font-size: 0.9rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  font-size: 0.4rem;
+
   width: auto;
   color: rgb(61, 60, 60) !important;
-  margin: 0.5rem auto;
+  margin: 0 auto;
 }
 
 .footerInfoContainer a:hover {
@@ -721,11 +693,10 @@ a:hover {
   background-color: rgb(206, 206, 206);
   padding: 2rem;
   font-size: 0.9rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .copyrightContainer p {
+  font-size: 0.5rem;
   margin-right: 1rem;
 }
 
@@ -835,6 +806,10 @@ a:hover {
   background-color: #6ade8b;
   border: none;
   border-radius: 0.3rem;
+}
+
+.business-type:hover {
+  cursor: pointer;
 }
 
 #hidDiv {
