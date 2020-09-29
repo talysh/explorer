@@ -1,6 +1,6 @@
 /* BACKGROUND IMGS */
 .welcomebgImg {
-  background-image: url(assets/images/dubai.jpg);
+  background-image: url(/assets/images/dubai.jpg);
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
@@ -257,6 +257,12 @@ a:hover {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 } */
+
+#radius {
+  margin: 0 1rem;
+  min-height: 2rem;
+  border-radius: 0.5rem;
+}
 
 .submitBtn {
   height: 2rem;
