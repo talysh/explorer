@@ -117,7 +117,7 @@ function createWebsiteListElement(place) {
     placeWebsite.textContent = place.name;
     placeWebsite.setAttribute('target', "_blank")
     placeWebsite.setAttribute('href', place.website);
-    console.log(placeWebsite);
+    // console.log(placeWebsite);
 
     photo = document.createElement("img");
     photo.classList.add("list-place-icon");
@@ -139,43 +139,6 @@ function createWebsiteListElement(place) {
 }
 
 
-
-// function initMap() {
-//     const map = new google.maps.Map(document.getElementById("map"), {
-//         center: { lat: -33.866, lng: 151.196 },
-//         zoom: 15,
-//     });
-//     const request = {
-//         placeId: "ChIJN1t_tDeuEmsRUsoyG83frY4",
-//         fields: ["name", "formatted_address", "place_id", "geometry"],
-//     };
-//     const infowindow = new google.maps.InfoWindow();
-//     const service = new google.maps.places.PlacesService(map);
-//     service.getDetails(request, (place, status) => {
-//         if (status === google.maps.places.PlacesServiceStatus.OK) {
-//             const marker = new google.maps.Marker({
-//                 map,
-//                 position: place.geometry.location,
-//             });
-//             google.maps.event.addListener(marker, "click", function () {
-//                 infowindow.setContent(
-//                     "<div><strong>" +
-//                     place.name +
-//                     "</strong><br>" +
-//                     "Place ID: " +
-//                     place.place_id +
-//                     "<br>" +
-//                     place.formatted_address +
-//                     "</div>"
-//                 );
-
-//                 infowindow.open(map, this);
-//             });
-//         }
-//     });
-// }
-
-
 // Search for restaurants in a given city
 $("#restaurants").click(function () {
     businessTypeGlobal = "restaurant";
@@ -192,15 +155,15 @@ $("#hotels").click(function () {
 });
 
 // Search for entertainment for given city
-$("#entertainment").click(function () {
-    businessTypeGlobal = "entertainment";
+$("#tourist-attractions").click(function () {
+    businessTypeGlobal = "tourist_attraction";
     redrawMap();
 
 });
 
 // Search for churches in a given city
-$("#spiritualWelfare").click(function () {
-    businessTypeGlobal = "church";
+$("#shopping-malls").click(function () {
+    businessTypeGlobal = "shopping_mall";
     redrawMap();
 
 });
@@ -231,41 +194,43 @@ $(document).ready(function () {
             event.preventDefault();
             city = $("#searched-city").val().trim();
             APIcalls();
-        })
+            searchRadiusGlobal = parseInt($("#radius").val()) * 1600;
+            console.log(searchRadiusGlobal);
+        });
 
 
         function APIcalls() {
             weatherUrl = "https://api.openweathermap.org/data/2.5/weather?q=";
             APIkey = "&appid=ea42a1210d1c0c2d7b6990d0d1323fe7";
             currentWeatherUrl = weatherUrl + city + APIkey;
-            $("#cityName").text("Today's Weather in " + jsUcFirst(city));
+            $("#cityName").text("Today's Weather in " + capitalize(city));
             $.ajax({
                 url: currentWeatherUrl,
                 method: "GET",
-            }).then(function (currentData) {
-                console.log(currentData);
-                console.log(currentData);
-                var temp = Math.round(((currentData.main.temp - 273.15) * 9 / 5 + 32))
+            }).then(function (response) {
+                var temp = Math.round(((response.main.temp - 273.15) * 9 / 5 + 32))
                 console.log("The temperature in " + city + " is: " + temp);
                 $("#todayTemp").text("Temperature: " + temp + String.fromCharCode(176) + "F");
-                $("#todayHumidity").text("Humidity: " + currentData.main.humidity);
-                $("#todayWindSpeed").text("Wind Speed: " + currentData.wind.speed);
+                $("#todayHumidity").text("Humidity: " + response.main.humidity);
+                $("#todayWindSpeed").text("Wind Speed: " + response.wind.speed);
                 $("#todayImgSection").attr({
-                    "src": "http://openweathermap.org/img/w/" + currentData.weather[0].icon + ".png",
+                    "src": "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png",
                     "height": "100px", "width": "100px"
                 });
 
 
-                latGlobal = currentData.coord.lat;
-                lonGlobal = currentData.coord.lon;
+                latGlobal = response.coord.lat;
+                lonGlobal = response.coord.lon;
                 redrawMap();
 
             })
 
         }
     }
-    function jsUcFirst(string) {
-        return string.charAt().toUpperCase() + string.slice(1);
+
+
+    function capitalize(string) {
+        return string.charAt().toUpperCase() + string.slice(1).toLowerCase();
     }
 });
 
@@ -287,8 +252,7 @@ $("#instagram").on("click", function () {
 
 
 
-
-
 // Default search is for restaurants within 10km range of Boston
-setSearchParameters(42.3601, -71.0589, "restaurant", '10000', 12);
+
+setSearchParameters(42.3601, -71.0589, "restaurant", '10000', 13);
 
