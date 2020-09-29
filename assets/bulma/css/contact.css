@@ -1,0 +1,443 @@
+/* HOME BUTTON */
+
+.img1 {
+  transition: all 0.3s ease-in-out 0s;
+}
+.img1:hover {
+  cursor: default;
+  transform: rotate(360deg);
+  transition: all 0.8s ease-in-out 0s;
+}
+/* 
+.reviewPic {
+  height: 200px;
+  width: 200px;
+  border: 0.2rem solid rgb(61, 60, 60);
+  border-radius: 0.7rem;
+  margin: 0 auto;
+  opacity: 1;
+}
+
+.reviewPic:hover {
+  height: 200px;
+  width: 200px;
+  border: 0.2rem solid rgb(61, 60, 60);
+  border-radius: 0.7rem;
+  margin: 0 auto;
+  opacity: 0.5;
+} */
+
+.selectionContainer:hover {
+  text-align: center !important;
+  padding: 1.5rem;
+  margin: 0 auto;
+  width: max-content;
+  background-color: rgba(63, 61, 61, 1) !important;
+  color: white !important;
+  border-radius: 0.7rem;
+}
+
+/* HEADER NAVBAR */
+
+.headSection {
+  background-color: white !important;
+  padding: 0rem 1rem !important;
+  border-bottom: 0.1rem solid palegoldenrod;
+  max-height: max-content !important;
+  align-items: normal !important;
+}
+
+.headerContainer {
+  display: flex;
+  margin: 0 0 0 0 !important;
+  width: 100%;
+}
+
+.qouteContainer {
+  display: flex;
+  height: max-content;
+  padding: 0%;
+}
+
+.qoutePartB {
+  font-size: 3rem;
+  padding: 10px 0px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.headerImg {
+  margin-top: 0.3rem;
+  height: 5rem;
+  width: 5rem;
+}
+
+.navbar-burger {
+  height: max-content !important;
+  width: max-content !important;
+}
+
+/* .burgerImg {
+  height: 3.5rem;
+  width: 3.5rem;
+} */
+
+.nav-links-container {
+  display: flex;
+  margin-left: 0px;
+  margin: 0 0 0 auto;
+}
+
+a {
+  color: white !important;
+}
+
+a:hover {
+  color: rgb(63, 61, 61) !important;
+  transition: 0.3s;
+}
+
+.nav-links {
+  padding: 1rem 1rem 1rem 1rem !important;
+  margin: auto 1rem;
+  height: max-content !important;
+  border-bottom: 0.2rem solid;
+  background-color: rgb(63, 61, 61);
+  color: white;
+  border-radius: 0.7rem;
+}
+
+.likes {
+  position: relative;
+  visibility: visible;
+}
+
+.overlay {
+  display: none;
+  padding: 1rem 1rem 1rem 1rem !important;
+  margin: auto 1rem;
+  height: max-content !important;
+  border-bottom: 0.2rem solid;
+}
+
+.likes:hover a {
+  visibility: hidden;
+  color: rgb(228, 228, 228) !important;
+}
+
+.likes:hover .overlay {
+  background-color: rgb(228, 228, 228) !important;
+  border-bottom: 0.2rem solid palegoldenrod;
+  border-radius: 0.7rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 3.8rem;
+  height: 3.8rem;
+  overflow: auto;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.nav-links:hover {
+  background-color: rgb(228, 228, 228) !important;
+  border-bottom: 0.2rem solid palegoldenrod;
+  border-radius: 0.7rem;
+}
+
+.contact {
+  text-align: end;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+/* CONTACT FORM */
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[type="submit"]:hover {
+  background-color: grey;
+}
+#container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 100px 200px;
+}
+
+/* FOOTER SECTION */
+
+.footerSection {
+  border-top: 0.2rem solid palegoldenrod;
+  background-color: whitesmoke !important;
+  width: auto;
+  display: flex;
+}
+
+.footerInfoContainer {
+}
+
+.footerSignUpSection {
+  margin: 2rem;
+}
+
+.footerSignUpContainer {
+  margin: 0.5rem;
+}
+
+.footerSignUpHeader {
+}
+
+.footerSignUpHeader h3 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.footerSignUpHeader p {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  text-align: start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.footerSignUpForm {
+}
+
+.signUpInput {
+  padding: 1rem;
+  height: 3rem;
+  border-radius: 0.2rem;
+  margin-right: 0.2rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.signUpBtn {
+  font-size: 0.9rem;
+  border-radius: 0.2rem;
+  height: 3rem;
+  width: 5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  margin: 0 auto 0 0;
+  background-color: #00b7ff;
+  color: white;
+}
+
+.signUpBtn:hover {
+  background-color: #008cff;
+}
+
+.playBtn {
+  margin-left: 0.2rem;
+  height: 20%;
+  width: 10%;
+  color: white;
+}
+
+.footerSocialMediaSection {
+  margin-top: 1.5rem;
+}
+
+#facebook,
+#instagram,
+#linkedin,
+#twitter {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 1.5rem;
+  margin-right: 0.5rem;
+  color: white;
+  background-color: rgb(61, 60, 60);
+  border: 0.2rem solid rgb(182, 182, 182);
+}
+
+#facebook:hover,
+#instagram:hover,
+#linkedin:hover,
+#twitter:hover {
+  color: palegoldenrod;
+}
+.footerCommitmentSpeechSection {
+  margin: 2rem 2rem 4.5rem;
+}
+
+.footerCommitmentContainer {
+  justify-content: left !important;
+  margin: 0.5rem;
+}
+
+.commitmentSpeech {
+  margin-top: 0rem;
+  margin-left: 0rem !important;
+}
+
+.commitmentSpeech h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.commitmentSpeech p {
+  margin-bottom: 1rem;
+  font-size: 0.8rem;
+  text-align: start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.brandLogo {
+  min-height: 5rem;
+  min-width: 5rem;
+  width: 5rem;
+  height: 5rem;
+  margin: 2rem 0rem 4rem 2rem;
+}
+
+.brandLogo p {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.p2 {
+  text-align: center;
+  font-size: 0.7rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  text-decoration: underline;
+}
+
+.footerNavigationSection {
+  margin: 2rem 2rem 4.5rem;
+}
+
+.footerNavigationContainer {
+  width: auto;
+  margin: 0.5rem;
+}
+
+.footerNavigationContainer h2 {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: start;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.footerInfoContainer a {
+  font-size: 0.9rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  width: auto;
+  color: rgb(61, 60, 60) !important;
+  margin: 0.5rem auto;
+}
+
+.footerInfoContainer a:hover {
+  color: #00b7ff !important;
+}
+
+/* COPY RIGHT SECTION */
+
+.copyrightSection {
+}
+
+.copyrightContainer {
+  background-color: rgb(206, 206, 206);
+  padding: 2rem;
+  font-size: 0.9rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
+.copyrightContainer p {
+  margin-right: 1rem;
+}
+
+.copyrightContainer i {
+  margin-right: 0.2rem;
+}
+
+/* dropdown menu */
+
+.fa-bars {
+  height: 3.5rem;
+ width: 3.5rem;
+ background-color: transparent;
+ color: black;
+}
+
+#dropdown-item {
+  color: black;
+}
+
+#dropdown-content a
+{
+  text-decoration:none;
+  display:block;  
+}
+
+#dropdown-content {
+  display: none;
+}
+
+#dropdown-content.show
+{
+  display: block;
+  }
+
+  a.menu{
+  background-color:rgb(63, 61, 61);
+}
+/* Welcome title */
+
+.title {
+  padding: 0.5rem;
+  width: max-content !important;
+  text-align: center !important;
+  text-decoration: bolder !important;
+  font-family: "Times New Roman", Times, serif !important;
+  background-color: white !important;
+  margin: 0 auto;
+  border: 0.2rem solid rgb(63, 61, 61);
+}
+
+.globeIcon {
+  height: 6rem;
+  width: 8rem;
+  background-color: transparent !important;
+}
+
+.titleborder {
+  width: max-content !important;
+  background-color: transparent !important;
+  border: 0.2rem solid;
+  margin: 0 auto;
+  z-index: 99;
+}

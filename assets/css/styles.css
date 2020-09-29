@@ -47,8 +47,8 @@
 }
 
 .fa-bars {
-   height: 3.5rem;
-  width: 3.5rem;
+  height: max-content !important;
+  width: max-content !important;
 }
 
 
@@ -263,6 +263,22 @@ a.menu{
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
+
+.submitBtn {
+  height: 2rem;
+  background-color: rgb(247, 247, 247);
+  border: 0.1 solid rgb(61, 60, 60);
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  border-radius: 0.7rem;
+}
+
+.submitBtn:hover {
+  background-color: seagreen;
+  color: white;
+  border: 0.1rem solid #6ade8b;
+}
+
 
 /* Travel Preview Section */
 
@@ -537,4 +553,50 @@ a.menu{
   border-radius: 0.1rem;
   background-color: rgba(0, 0, 0, 0.5);
   box-shadow: 0 0 0.1rem lightgrey;
+}
+
+
+/* Weather */
+
+.weatherForecast {
+  background-color: white;
+  border-top: 0.2rem solid #6ade8b;
+  width: 100%;
+  padding: 2rem 0 !important;
+}
+
+.weatherDisplay {
+  padding: 1rem 2rem;
+  margin: 0 auto;
+  border-top: 0.2rem solid rgb(61, 60, 60);
+  border-bottom: 0.2rem solid rgb(61, 60, 60);
+  border-radius: 0.5rem;
+}
+
+.weatherData {
+  margin-top: 0.5rem;
+}
+
+.weatherData p {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  font-size: 1rem;
+  margin-right: 0.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.welcomeMessagePlaceHolder {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  font-size: 2rem;
+  text-shadow: 3px 3px 3px #6ade8b;
+  text-decoration: 0.1 underline solid;
+  text-align: center;
+}
+.cityName {
+  text-align: center;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  font-size: 1.3rem;
+  text-shadow: 3px 3px 3px #6ade8b;
 }
