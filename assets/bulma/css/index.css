@@ -836,3 +836,7 @@ a:hover {
   border: none;
   border-radius: 0.3rem;
 }
+
+#hidDiv {
+  display: none;
+}

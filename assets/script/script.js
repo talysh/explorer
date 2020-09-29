@@ -234,6 +234,25 @@ $(document).ready(function () {
     }
 });
 
+$("#facebook").on("click", function () {
+    console.log("click register");
+    window.location.href = "https://www.facebook.com/Explorer-107453107788226";
+});
+
+$("#twitter").on("click", function () {
+    console.log("click register");
+    window.location.href = "https://twitter.com/ExplorerTravel6";
+});
+
+$("#instagram").on("click", function () {
+    console.log("click register");
+    window.location.href = "https://www.instagram.com/teamworldexplorer/?hl=en";
+});
+
+
+
 
 // Default search is for restaurants within 10km range of Boston
+
 setSearchParameters(42.3601, -71.0589, "restaurant", '10000', 13);
+
