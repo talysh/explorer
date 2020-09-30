@@ -5,7 +5,7 @@ body {
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 .welcomebgImg {
-  background-image: url(https://github.com/talysh/explorer/blob/master/assets/images/dubai%20(1).jpg?raw=true);
+  background-image: url("https://github.com/talysh/explorer/blob/master/assets/images/dubai%20(1).jpg?raw=true");
   background-size: auto;
   background-position: center;
   background-repeat: no-repeat;
