@@ -1,5 +1,10 @@
 /* HOME BUTTON */
 
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+}
+
 .img1 {
   transition: all 0.3s ease-in-out 0s;
 }
@@ -8,24 +13,6 @@
   transform: rotate(360deg);
   transition: all 0.8s ease-in-out 0s;
 }
-/* 
-.reviewPic {
-  height: 200px;
-  width: 200px;
-  border: 0.2rem solid rgb(61, 60, 60);
-  border-radius: 0.7rem;
-  margin: 0 auto;
-  opacity: 1;
-}
-
-.reviewPic:hover {
-  height: 200px;
-  width: 200px;
-  border: 0.2rem solid rgb(61, 60, 60);
-  border-radius: 0.7rem;
-  margin: 0 auto;
-  opacity: 0.5;
-} */
 
 .selectionContainer:hover {
   text-align: center !important;
@@ -42,7 +29,7 @@
 .headSection {
   background-color: white !important;
   padding: 0rem 1rem !important;
-  border-bottom: 0.1rem solid palegoldenrod;
+  border-bottom: 0.1rem solid #6ade8b;
   max-height: max-content !important;
   align-items: normal !important;
 }
@@ -62,8 +49,6 @@
 .qoutePartB {
   font-size: 3rem;
   padding: 10px 0px;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .headerImg {
@@ -127,7 +112,7 @@ a:hover {
 
 .likes:hover .overlay {
   background-color: rgb(228, 228, 228) !important;
-  border-bottom: 0.2rem solid palegoldenrod;
+  border-bottom: 0.1rem solid #6ade8b;
   border-radius: 0.7rem;
   position: absolute;
   top: 0;
@@ -143,14 +128,12 @@ a:hover {
 
 .nav-links:hover {
   background-color: rgb(228, 228, 228) !important;
-  border-bottom: 0.2rem solid palegoldenrod;
+  border-bottom: 0.1rem solid #6ade8b;
   border-radius: 0.7rem;
 }
 
 .contact {
   text-align: end;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 /* CONTACT FORM */
@@ -159,16 +142,21 @@ input[type="text"],
 select,
 textarea {
   width: 100%;
-  padding: 12px;
+  padding: 0.75rem;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 0.3rem;
   box-sizing: border-box;
-  margin-top: 6px;
-  margin-bottom: 16px;
+  margin-top: 0.4rem;
+  margin-bottom: 1rem;
   resize: vertical;
 }
+
+#subject {
+  padding: 0.75rem;
+  margin-bottom: 2rem;
+}
 input[type="submit"] {
-  background-color: #4caf50;
+  background-color: #6ade8b;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -187,7 +175,7 @@ input[type="submit"]:hover {
 /* FOOTER SECTION */
 
 .footerSection {
-  border-top: 0.2rem solid palegoldenrod;
+  border-top: 0.1rem solid #6ade8b;
   background-color: whitesmoke !important;
   width: auto;
   display: flex;
@@ -211,16 +199,12 @@ input[type="submit"]:hover {
   margin-bottom: 1rem;
   font-size: 1rem;
   text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .footerSignUpHeader p {
   margin-bottom: 1rem;
   font-size: 0.8rem;
   text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .footerSignUpForm {
@@ -231,8 +215,6 @@ input[type="submit"]:hover {
   height: 3rem;
   border-radius: 0.2rem;
   margin-right: 0.2rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .signUpBtn {
@@ -240,8 +222,7 @@ input[type="submit"]:hover {
   border-radius: 0.2rem;
   height: 3rem;
   width: 5rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+
   margin: 0 auto 0 0;
   background-color: #00b7ff;
   color: white;
@@ -259,7 +240,8 @@ input[type="submit"]:hover {
 }
 
 .footerSocialMediaSection {
-  margin-top: 1.5rem;
+  padding: 2rem;
+  background-color: #cecece;
 }
 
 #facebook,
@@ -279,12 +261,14 @@ input[type="submit"]:hover {
 #instagram:hover,
 #linkedin:hover,
 #twitter:hover {
-  color: palegoldenrod;
-}
-.footerCommitmentSpeechSection {
-  margin: 2rem 2rem 4.5rem;
+  color: #6ade8b;
+  cursor: pointer;
 }
 
+.footerCommitmentSpeechSection {
+  padding: 3rem;
+  margin: 2rem 1.5rem;
+}
 .footerCommitmentContainer {
   justify-content: left !important;
   margin: 0.5rem;
@@ -296,64 +280,23 @@ input[type="submit"]:hover {
 }
 
 .commitmentSpeech h2 {
+  color: rgb(61, 60, 60);
   margin-bottom: 1rem;
   font-size: 1rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  text-align: center;
 }
 
 .commitmentSpeech p {
-  margin-bottom: 1rem;
+  width: 80%;
+  text-align: center;
+  margin: 0 auto;
   font-size: 0.8rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
-
-.brandLogo {
-  min-height: 5rem;
-  min-width: 5rem;
-  width: 5rem;
-  height: 5rem;
-  margin: 2rem 0rem 4rem 2rem;
-}
-
-.brandLogo p {
-  text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
-}
-
-.p2 {
-  text-align: center;
-  font-size: 0.7rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
-  text-decoration: underline;
-}
-
-.footerNavigationSection {
-  margin: 2rem 2rem 4.5rem;
-}
-
-.footerNavigationContainer {
-  width: auto;
-  margin: 0.5rem;
-}
-
-.footerNavigationContainer h2 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
-}
-
+/* 
+/* 
 .footerInfoContainer a {
   font-size: 0.9rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+   
   width: auto;
   color: rgb(61, 60, 60) !important;
   margin: 0.5rem auto;
@@ -365,55 +308,48 @@ input[type="submit"]:hover {
 
 /* COPY RIGHT SECTION */
 
-.copyrightSection {
-}
-
 .copyrightContainer {
   background-color: rgb(206, 206, 206);
   padding: 2rem;
   font-size: 0.9rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .copyrightContainer p {
+  font-size: 0.5rem;
   margin-right: 1rem;
 }
 
 .copyrightContainer i {
   margin-right: 0.2rem;
 }
-
 /* dropdown menu */
 
 .fa-bars {
   height: 3.5rem;
- width: 3.5rem;
- background-color: transparent;
- color: black;
+  width: 3.5rem;
+  background-color: transparent;
+  color: black;
 }
 
 #dropdown-item {
   color: black;
 }
 
-#dropdown-content a
-{
-  text-decoration:none;
-  display:block;  
+#dropdown-content a {
+  text-decoration: none;
+  display: block;
 }
 
 #dropdown-content {
   display: none;
 }
 
-#dropdown-content.show
-{
+#dropdown-content.show {
   display: block;
-  }
+}
 
-  a.menu{
-  background-color:rgb(63, 61, 61);
+a.menu {
+  background-color: rgb(63, 61, 61);
 }
 /* Welcome title */
 

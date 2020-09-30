@@ -8,24 +8,6 @@
   transform: rotate(360deg);
   transition: all 0.8s ease-in-out 0s;
 }
-/* 
-.reviewPic {
-  height: 200px;
-  width: 200px;
-  border: 0.2rem solid rgb(61, 60, 60);
-  border-radius: 0.7rem;
-  margin: 0 auto;
-  opacity: 1;
-}
-
-.reviewPic:hover {
-  height: 200px;
-  width: 200px;
-  border: 0.2rem solid rgb(61, 60, 60);
-  border-radius: 0.7rem;
-  margin: 0 auto;
-  opacity: 0.5;
-} */
 
 .selectionContainer:hover {
   text-align: center !important;
@@ -42,7 +24,7 @@
 .headSection {
   background-color: white !important;
   padding: 0rem 1rem !important;
-  border-bottom: 0.1rem solid palegoldenrod;
+  border-bottom: 0.1rem solid #6ade8b;
   max-height: max-content !important;
   align-items: normal !important;
 }
@@ -127,7 +109,7 @@ a:hover {
 
 .likes:hover .overlay {
   background-color: rgb(228, 228, 228) !important;
-  border-bottom: 0.2rem solid palegoldenrod;
+  border-bottom: 0.1rem solid #6ade8b;
   border-radius: 0.7rem;
   position: absolute;
   top: 0;
@@ -143,7 +125,7 @@ a:hover {
 
 .nav-links:hover {
   background-color: rgb(228, 228, 228) !important;
-  border-bottom: 0.2rem solid palegoldenrod;
+  border-bottom: 0.1rem solid #6ade8b;
   border-radius: 0.7rem;
 }
 
@@ -152,7 +134,6 @@ a:hover {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
-
 
 #title {
   margin: 0 0 20px 0;
@@ -181,9 +162,9 @@ a:hover {
   top: 0;
   left: 0;
   box-sizing: border-box;
-  padding: 40px;
-  width: 300px;
-  height: 400px;
+  padding: 2.5rem;
+  width: 18.75rem;
+  height: 25rem;
 }
 #text {
   display: block;
@@ -194,19 +175,19 @@ a:hover {
   height: 32px;
   border: none;
   outline: none;
-  border-bottom: 1px solid #aaa;
+  border-bottom: 0.1rem solid #aaa;
   font-family: sans-serif;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 1rem;
   transition: 0.2s ease;
 }
 #sign {
-  margin-bottom: 28px;
-  width: 220px;
-  height: 80px;
-  background: skyblue;
+  margin-bottom: 2rem;
+  width: 14.375rem;
+  height: 5rem;
+  background: #6ade8b;
   border: none;
-  border-radius: 2px;
+  border-radius: 0.5rem;
   color: #fff;
   font-family: sans-serif;
   font-weight: 500;
@@ -214,30 +195,7 @@ a:hover {
   transition: 0.2s ease;
   cursor: pointer;
 }
-#secondbox {
-  position: absolute;
-  top: 0;
-  right: 0;
-  box-sizing: border-box;
-  padding: 40px;
-  width: 300px;
-  height: 400px;
-  background-image: url(assets/images/travel.jpg);
-  background-size: cover;
-  background-position: center;
-}
-.or {
-  position: absolute;
-  top: 180px;
-  left: 280px;
-  width: 40px;
-  height: 40px;
-  background: #efefef;
-  border-radius: 50%;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
-  line-height: 40px;
-  text-align: center;
-}
+
 #secondbox .signinwith {
   display: block;
   margin-bottom: 40px;
@@ -276,19 +234,17 @@ a:hover {
 #instagram:hover,
 #linkedin:hover,
 #twitter:hover {
-  color: palegoldenrod;
+  color: #6ade8b;
+  cursor: pointer;
 }
 
 /* FOOTER SECTION */
 
 .footerSection {
-  border-top: 0.2rem solid palegoldenrod;
+  border-top: 0.1rem solid #6ade8b;
   background-color: whitesmoke !important;
   width: auto;
   display: flex;
-}
-
-.footerInfoContainer {
 }
 
 .footerSignUpSection {
@@ -297,9 +253,6 @@ a:hover {
 
 .footerSignUpContainer {
   margin: 0.5rem;
-}
-
-.footerSignUpHeader {
 }
 
 .footerSignUpHeader h3 {
@@ -316,9 +269,6 @@ a:hover {
   text-align: start;
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
-}
-
-.footerSignUpForm {
 }
 
 .signUpInput {
@@ -355,7 +305,8 @@ a:hover {
 }
 
 .footerSocialMediaSection {
-  margin-top: 1.5rem;
+  padding: 2rem;
+  background-color: #cecece;
 }
 
 #facebook2,
@@ -375,10 +326,13 @@ a:hover {
 #instagram2:hover,
 #linkedin2:hover,
 #twitter2:hover {
-  color: palegoldenrod;
+  color: #6ade8b;
+  cursor: pointer;
 }
+
 .footerCommitmentSpeechSection {
-  margin: 2rem 2rem 4.5rem;
+  padding: 3rem;
+  margin: 2rem 1.5rem;
 }
 
 .footerCommitmentContainer {
@@ -392,33 +346,17 @@ a:hover {
 }
 
 .commitmentSpeech h2 {
+  color: rgb(61, 60, 60);
   margin-bottom: 1rem;
   font-size: 1rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  text-align: center;
 }
 
 .commitmentSpeech p {
-  margin-bottom: 1rem;
-  font-size: 0.8rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
-}
-
-.brandLogo {
-  min-height: 5rem;
-  min-width: 5rem;
-  width: 5rem;
-  height: 5rem;
-  margin: 2rem 0rem 4rem 2rem;
-}
-
-.brandLogo p {
+  width: 80%;
   text-align: center;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
+  margin: 0 auto;
+  font-size: 0.8rem;
 }
 
 .p2 {
@@ -429,50 +367,20 @@ a:hover {
   text-decoration: underline;
 }
 
-.footerNavigationSection {
-  margin: 2rem 2rem 4.5rem;
-}
-
-.footerNavigationContainer {
-  width: auto;
-  margin: 0.5rem;
-}
-
-.footerNavigationContainer h2 {
-  margin-bottom: 1rem;
-  font-size: 1rem;
-  text-align: start;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
-}
-
-.footerInfoContainer a {
-  font-size: 0.9rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
-  width: auto;
-  color: rgb(61, 60, 60) !important;
-  margin: 0.5rem auto;
-}
-
 .footerInfoContainer a:hover {
   color: #00b7ff !important;
 }
 
 /* COPY RIGHT SECTION */
 
-.copyrightSection {
-}
-
 .copyrightContainer {
   background-color: rgb(206, 206, 206);
   padding: 2rem;
   font-size: 0.9rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif !important;
 }
 
 .copyrightContainer p {
+  font-size: 0.5rem;
   margin-right: 1rem;
 }
 
@@ -484,32 +392,30 @@ a:hover {
 
 .fa-bars {
   height: 3.5rem;
- width: 3.5rem;
- background-color: transparent;
- color: black;
+  width: 3.5rem;
+  background-color: transparent;
+  color: black;
 }
 
 #dropdown-item {
   color: black;
 }
 
-#dropdown-content a
-{
-  text-decoration:none;
-  display:block;  
+#dropdown-content a {
+  text-decoration: none;
+  display: block;
 }
 
 #dropdown-content {
   display: none;
 }
 
-#dropdown-content.show
-{
+#dropdown-content.show {
   display: block;
-  }
+}
 
-  a.menu{
-  background-color:rgb(63, 61, 61);
+a.menu {
+  background-color: rgb(63, 61, 61);
 }
 /* Welcome title */
 

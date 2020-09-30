@@ -39,7 +39,7 @@ body {
 .reviewPic:hover {
   height: 200px;
   width: 200px;
-  border: 0.2rem solid rgb(61, 60, 60);
+  border: 0.1rem solid rgb(61, 60, 60);
   border-radius: 0.3rem;
   margin: 0 auto;
   opacity: 0.5;
@@ -60,7 +60,7 @@ body {
 .headSection {
   background-color: white !important;
   padding: 0rem 1rem !important;
-  border-bottom: 0.1rem solid palegoldenrod;
+  border-bottom: 0.1rem solid #6ade8b;
   max-height: max-content !important;
   align-items: normal !important;
 }
@@ -143,7 +143,7 @@ a:hover {
 
 .likes:hover .overlay {
   background-color: rgb(228, 228, 228) !important;
-  border-bottom: 0.2rem solid #6ade8b;
+  border-bottom: 0.1rem solid #6ade8b;
   border-radius: 0.5rem;
   position: absolute;
   top: 0;
@@ -159,7 +159,7 @@ a:hover {
 
 .nav-links:hover {
   background-color: rgb(228, 228, 228) !important;
-  border-bottom: 0.2rem solid palegoldenrod;
+  border-bottom: 0.1rem solid #6ade8b;
   border-radius: 0.5rem;
 }
 
@@ -177,7 +177,7 @@ a:hover {
   font-family: "Times New Roman", Times, serif !important;
   background-color: white !important;
   margin: 0 auto;
-  border: 0.2rem solid rgb(63, 61, 61);
+  border: 0.1rem solid rgb(63, 61, 61);
 }
 
 .globeIcon {
@@ -548,9 +548,6 @@ a:hover {
   text-align: start;
 }
 
-.footerSignUpForm {
-}
-
 .signUpInput {
   padding: 1rem;
   height: 3rem;
@@ -602,7 +599,8 @@ a:hover {
 #instagram:hover,
 #linkedin:hover,
 #twitter:hover {
-  color: palegoldenrod;
+  color: #6ade8b;
+  cursor: pointer;
 }
 
 .footerCommitmentSpeechSection {
@@ -628,7 +626,7 @@ a:hover {
 }
 
 .commitmentSpeech p {
-  width: 60%;
+  width: 80%;
   text-align: center;
   margin: 0 auto;
   font-size: 0.8rem;
@@ -651,41 +649,7 @@ a:hover {
   text-decoration: underline;
 }
 
-.footerNavigationSection {
-  background-color: #cecece;
-  text-align: center;
-}
-
-.footerNavigationContainer {
-  width: auto;
-  margin: 0.5rem;
-  font-size: 0.5rem;
-}
-
-.footerNavigationContainer h2 {
-  margin-top: 2rem;
-  font-size: 0.5rem;
-  line-height: 0;
-  font-weight: bold;
-  text-align: center;
-}
-
-.footerInfoContainer a {
-  font-size: 0.4rem;
-
-  width: auto;
-  color: rgb(61, 60, 60) !important;
-  margin: 0 auto;
-}
-
-.footerInfoContainer a:hover {
-  color: #00b7ff !important;
-}
-
 /* COPY RIGHT SECTION */
-
-.copyrightSection {
-}
 
 .copyrightContainer {
   background-color: rgb(206, 206, 206);
@@ -818,30 +782,28 @@ a:hover {
 
 .fa-bars {
   height: 3.5rem;
- width: 3.5rem;
- background-color: transparent;
- color: black;
+  width: 3.5rem;
+  background-color: transparent;
+  color: black;
 }
 
 #dropdown-item {
   color: black;
 }
 
-#dropdown-content a
-{
-  text-decoration:none;
-  display:block;  
+#dropdown-content a {
+  text-decoration: none;
+  display: block;
 }
 
 #dropdown-content {
   display: none;
 }
 
-#dropdown-content.show
-{
+#dropdown-content.show {
   display: block;
-  }
+}
 
-  a.menu{
-  background-color:rgb(63, 61, 61);
+a.menu {
+  background-color: rgb(63, 61, 61);
 }

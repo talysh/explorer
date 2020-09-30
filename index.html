@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="stylesheet" href="assets/bulma/css/bulma.css">
-<link rel="stylesheet" href="assets/bulma/css/index.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/bulma/css/bulma.css">
+    <link rel="stylesheet" href="assets/bulma/css/index.css">
 
 
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
-    integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
+        integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" rel="stylesheet">
 
 
 
-<title>Explorer</title>
+    <title>Explorer</title>
 </head>
 
 
@@ -43,24 +44,24 @@
 
             <div class="dropdown">
                 <div class="navbar-burger dropdown-trigger navbar-end">
-                  <button class="fa fa-bars" aria-haspopup="true" aria-controls="dropdown-menu">
-                </button>
-                
-                <div class="dropdown-menu" id="dropdown-menu" role="menu">
-                  <div class="show-hide-menu">
-                    <a href="signUp.html" class="menu dropdown-item">
-                      Sign Up
-                    </a>
-                    <a href="#" class="menu dropdown-item">
-                      Likes
-                    </a>
-                    <a href="contacts.html" class="menu dropdown-item">
-                      Contact Us
-                    </a>
-                  </div>
+                    <button class="fa fa-bars" aria-haspopup="true" aria-controls="dropdown-menu">
+                    </button>
+
+                    <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                        <div class="show-hide-menu">
+                            <a href="signUp.html" class="menu dropdown-item">
+                                Sign Up
+                            </a>
+                            <a href="#" class="menu dropdown-item">
+                                Likes
+                            </a>
+                            <a href="contacts.html" class="menu dropdown-item">
+                                Contact Us
+                            </a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-               </div>
+            </div>
 
 
 
@@ -177,94 +178,52 @@
 
     </section>
 
+    <div class="container.is-fluid">
+        <section class="mapSection">
 
-    <section class="mapSection">
+            <section class="mapcontainer level">
+                <section class="map level" id="mapSection">
 
-        <section class="mapcontainer level">
-            <section class="map level" id="mapSection">
-
-
-                <div class="firstGalleryCol">
-                    <div class="pictureContainerWrap">
-                        <div class="pictureContainer">
-                            <a href="">Fullfillment</a>
+                    <div class="mapContainer">
+                        <div class="mapMessage">
+                            <h1>Time to experience...</h1>
                         </div>
-                        <div class="galleryContainer level-item">
-                            <img class="travelPictures" src="assets/images/meal.jpg" alt="">
-                        </div>
-                    </div>
+                        <div class="mapImg">
 
+                            <div id="map"></div>
+                            <div id="search-list">
+                                <h5 class="info">Information</h5>
+                            </div>
 
-                    <div class="pictureContainerWrap2">
-                        <div class="pictureContainer">
-                            <a href="">Relaxation</a>
-                        </div>
-                        <div class="galleryContainer level-item">
-                            <img class="travelPictures" src="assets/images/relax.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="mapContainer">
-                    <div class="mapMessage">
-                        <h1>Time to experience...</h1>
-                    </div>
-                    <div class="mapImg">
-
-                        <div id="map"></div>
-                        <div id="search-list">
-                            <h5 class="info">Information</h5>
                         </div>
 
-                    </div>
+                        <div class="mapNavLinks level-item">
+                            <div class="mapNav-links">
+                                <button id="restaurants" class="business-type" href="">Restaurants</button>
+                            </div>
 
-                    <div class="mapNavLinks level-item">
-                        <div class="mapNav-links">
-                            <button id="restaurants" class="business-type" href="">Restaurants</button>
-                        </div>
+                            <div class="mapNav-links">
+                                <button id="hotels" class="business-type" href="">Hotels & Resorts</button>
+                            </div>
 
-                        <div class="mapNav-links">
-                            <button id="hotels" class="business-type" href="">Hotels & Resorts</button>
-                        </div>
+                            <div class="mapNav-links">
+                                <button id="tourist-attractions" class="business-type" href="">Tourist
+                                    Attractions</button>
+                            </div>
 
-                        <div class="mapNav-links">
-                            <button id="tourist-attractions" class="business-type" href="">Tourist Attractions</button>
-                        </div>
-
-                        <div class="mapNav-links">
-                            <button id="shopping-malls" class="business-type" href="">Shopping Malls</button>
-                        </div>
-                    </div>
-                </div>
-
-
-
-                <div class="secondGalleryCol">
-                    <div class="pictureContainerWrap3">
-                        <div class="pictureContainer">
-                            <a href="">Culture</a>
-                        </div>
-                        <div class="galleryContainer level-item">
-                            <img class="travelPictures" src="assets/images/culture.jpg" alt="">
+                            <div class="mapNav-links">
+                                <button id="shopping-malls" class="business-type" href="">Shopping Malls</button>
+                            </div>
                         </div>
                     </div>
 
-                    <div class="pictureContainerWrap4">
-                        <div class="pictureContainer">
-                            <a href="">Spiritualility</a>
-                        </div>
-                        <div class="galleryContainer level-item">
-                            <img class="travelPictures" src="assets/images/temple.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
+                </section>
 
             </section>
 
         </section>
+    </div>
 
-    </section>
 
     <section class="reviewsContainer">
 
