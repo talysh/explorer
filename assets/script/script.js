@@ -212,7 +212,7 @@ $(document).ready(function () {
                 console.log("The temperature in " + city + " is: " + temp);
                 $("#todayTemp").text("Temperature: " + temp + String.fromCharCode(176) + "F");
                 $("#todayHumidity").text("Humidity: " + response.main.humidity);
-                $("#todayWindSpeed").text("Wind Speed: " + response.wind.speed);
+                $("#todayWindSpeed").text("Wind Speed: " + response.wind.speed + " MPH");
                 $("#todayImgSection").attr({
                     "src": "http://openweathermap.org/img/w/" + response.weather[0].icon + ".png",
                     "height": "100px", "width": "100px"

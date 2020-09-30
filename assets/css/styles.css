@@ -467,11 +467,11 @@ a.menu{
 
 
 /* Styling for the map elements */
-#map {
+/* #map {
   height: 400px;
   width: 80%;
   display: inline-block;
-}
+} */
 
 /* Business type icon for the main map */
 .place-icon {
