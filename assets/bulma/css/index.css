@@ -60,7 +60,7 @@ body {
 .headSection {
   background-color: white !important;
   padding: 0rem 1rem !important;
-  border-bottom: 0.1rem solid #6ade8b;
+  border-bottom: 0.1rem solid palegoldenrod;
   max-height: max-content !important;
   align-items: normal !important;
 }
@@ -93,10 +93,10 @@ body {
   width: max-content !important;
 }
 
-.burgerImg {
+/* .burgerImg {
   height: 3.5rem;
   width: 3.5rem;
-}
+} */
 
 .nav-links-container {
   display: flex;
@@ -159,7 +159,7 @@ a:hover {
 
 .nav-links:hover {
   background-color: rgb(228, 228, 228) !important;
-  border-bottom: 0.2rem solid #6ade8b;
+  border-bottom: 0.2rem solid palegoldenrod;
   border-radius: 0.5rem;
 }
 
@@ -241,12 +241,10 @@ a:hover {
   width: max-content !important;
    
 }
-
 .selectState {
   padding-bottom: 0.2rem;
    
 }
-
 .selectCountry {
   padding-bottom: 0.2rem;
    
@@ -593,20 +591,20 @@ a:hover {
 #twitter {
   height: 3rem;
   width: 3rem;
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   margin-right: 0.5rem;
   color: white;
   background-color: rgb(61, 60, 60);
-  border: 0.1rem solid rgb(182, 182, 182);
-  cursor: pointer;
+  border: 0.2rem solid rgb(182, 182, 182);
 }
 
 #facebook:hover,
 #instagram:hover,
 #linkedin:hover,
 #twitter:hover {
-  color: #6ade8b;
+  color: palegoldenrod;
 }
+
 .footerCommitmentSpeechSection {
   padding: 3rem;
   margin: 2rem 1.5rem;
@@ -814,4 +812,36 @@ a:hover {
 
 #hidDiv {
   display: none;
+}
+
+/* dropdown menu */
+
+.fa-bars {
+  height: 3.5rem;
+ width: 3.5rem;
+ background-color: transparent;
+ color: black;
+}
+
+#dropdown-item {
+  color: black;
+}
+
+#dropdown-content a
+{
+  text-decoration:none;
+  display:block;  
+}
+
+#dropdown-content {
+  display: none;
+}
+
+#dropdown-content.show
+{
+  display: block;
+  }
+
+  a.menu{
+  background-color:rgb(63, 61, 61);
 }

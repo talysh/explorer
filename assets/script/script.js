@@ -256,3 +256,15 @@ $("#instagram").on("click", function () {
 
 setSearchParameters(42.3601, -71.0589, "restaurant", '10000', 13);
 
+// dropdown menu
+ //DOMContentLoaded - it fires when initial HTML document has been completely loaded
+ document.addEventListener('DOMContentLoaded', function () {
+    var dropdown = document.querySelector('.dropdown');
+      
+    // Event listener to change hamburger menu dropdown to active.
+       dropdown.addEventListener('click', function(event) {
+       event.stopPropagation();
+       dropdown.classList.toggle('is-active');
+    });
+ });     
+

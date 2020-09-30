@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+<head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="assets/bulma/css/bulma.css">
@@ -9,9 +10,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css"
     integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-<link rel="stylesheet" href="assets/css/style.css">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.css" rel="stylesheet">
 
 
 
@@ -42,12 +41,26 @@
 
             </div>
 
-            <!-- <div class="navbar-burger navbar-end">
-                <div class="burgerImg level">
-                    <img src="images/square.png" alt="">
+            <div class="dropdown">
+                <div class="navbar-burger dropdown-trigger navbar-end">
+                  <button class="fa fa-bars" aria-haspopup="true" aria-controls="dropdown-menu">
+                </button>
+                
+                <div class="dropdown-menu" id="dropdown-menu" role="menu">
+                  <div class="show-hide-menu">
+                    <a href="signUp.html" class="menu dropdown-item">
+                      Sign Up
+                    </a>
+                    <a href="#" class="menu dropdown-item">
+                      Likes
+                    </a>
+                    <a href="contacts.html" class="menu dropdown-item">
+                      Contact Us
+                    </a>
+                  </div>
                 </div>
-    
-            </div> -->
+              </div>
+               </div>
 
 
 
@@ -335,7 +348,6 @@
                         <h3>STAY CONNECTED</h3>
                         <p>Join over 10,000 people who recieves bi-weekly travel tips and ideas.</p>
                     </div>
-
                     <form class="footerSignUpForm level-item" action="" action="submit">
                         <input class="signUpInput" id="text" type="text" name="email" placeholder="E-mail Address" />
                         <button class="signUpBtn level-item card" id="submitBtn" type="submit">Sign-Up
@@ -393,25 +405,18 @@
     </div>
     <!-- 
     <section class="footerNavigationSection level-item  ">
-
         <div class="footerNavigationContainer">
-
             <h2>NAVIGATE</h2>
             <a id="signUp" href="signUp.html">
                 Sign Up
             </a>
-
             <a id="likes" href="">
                 Likes
             </a>
-
             <a id="contactUs" href="contacts.html">
                 Contact Us
             </a>
-
-
         </div>
-
     </section> -->
     <section class="copyrightSection">
         <section class="copyrightContainer level-item">
